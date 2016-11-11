@@ -330,7 +330,7 @@
 								"F_EnCode": "DatabaseManage",
 								"F_FullName": "性能测试",
 								"F_Icon": "fa fa-database",
-								"F_UrlAddress": "/study-jsp/register.html",
+								"F_UrlAddress": null,
 								"F_Target": "expand",
 								"F_IsMenu": 0,
 								"F_AllowExpand": 1,
@@ -354,7 +354,7 @@
 								"F_EnCode": "DataBaseLink",
 								"F_FullName": "性能测试理论",
 								"F_Icon": "fa fa-plug",
-								"F_UrlAddress": "/analyse-jsp/register.html",
+								"F_UrlAddress": "http://www.cnblogs.com/fnng/archive/2012/08/17/2644878.html",
 								"F_Target": "iframe",
 								"F_IsMenu": 1,
 								"F_AllowExpand": 1,
@@ -372,6 +372,30 @@
 								"F_ModifyUserId": "System",
 								"F_ModifyUserName": "超级管理员"
 							},
+                            {
+                                "F_ModuleId": "34e362f4-c220-4fb7-b3f0-288c83417cb4",
+                                "F_ParentId": "7cec0a0f-7204-4240-b009-312fa0c11cbf",
+                                "F_EnCode": "DataBaseLink",
+                                "F_FullName": "性能测试分享",
+                                "F_Icon": "fa fa-plug",
+                                "F_UrlAddress": "/study-jsp/share.jsp",
+                                "F_Target": "iframe",
+                                "F_IsMenu": 1,
+                                "F_AllowExpand": 1,
+                                "F_IsPublic": 0,
+                                "F_AllowEdit": null,
+                                "F_AllowDelete": null,
+                                "F_SortCode": 1,
+                                "F_DeleteMark": 0,
+                                "F_EnabledMark": 1,
+                                "F_Description": "动态链接数据库",
+                                "F_CreateDate": "2015-11-24 09:50:22",
+                                "F_CreateUserId": "System",
+                                "F_CreateUserName": "超级管理员",
+                                "F_ModifyDate": "2016-04-29 14:07:45",
+                                "F_ModifyUserId": "System",
+                                "F_ModifyUserName": "超级管理员"
+                            },
 							{
 								"F_ModuleId": "2",
 								"F_ParentId": "0",
@@ -470,7 +494,7 @@
                                 _html += '<ul class="treeview-menu">';
                                 $.each(subchildNodes, function (i) {
                                     var subchildNodesrow = subchildNodes[i];
-                                    _html += '<li><a class="menuItem" data-id="' + subrow.F_ModuleId + '" href="' + subrow.F_UrlAddress + '"><i class="' + subchildNodesrow.F_Icon + '"></i>' + subchildNodesrow.F_FullName + '</a></li>';
+                                    _html += '<li><a class="menuItem" data-id="' + subrow.F_ModuleId + '" href="' + subchildNodesrow.F_UrlAddress + '"><i class="' + subchildNodesrow.F_Icon + '"></i>' + subchildNodesrow.F_FullName + '</a></li>';
                                 });
                                 _html += '</ul>';
 

@@ -1,10 +1,12 @@
-﻿<html>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<html>
 <head>
     <title>DM测试学习平台</title>
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/skins/_all-skins.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body class="hold-transition skin-blue sidebar-mini" style="overflow:hidden;">
     <div id="ajax-loader" style="cursor: progress; position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; background: #fff; z-index: 10000; overflow: hidden;">

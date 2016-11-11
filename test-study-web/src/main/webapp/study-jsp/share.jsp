@@ -4,13 +4,14 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>注册-幸福食客</title>
+<title>测试分享</title>
 <link href="../js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="../js/jquery/jQuery-2.2.0.min.js"></script>
+<script src="js/share.js"></script><script src="../js/jquery/jQuery-2.2.0.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -55,8 +56,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 					<form class="navbar-form navbar-left" role="search">
 						<div class="form-group">
-							<input type="text" class="form-control" />
-						</div> <button type="submit" class="btn btn-default">Submit</button>
+							<input id="keywords" type="text" class="form-control" />
+						</div> <button type="submit" class="btn btn-default" onclick="searchArticle()">搜索</button>
 					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
@@ -116,6 +117,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 <a href="#">Next</a>
 				</li>
 			</ul>
+			<div id="result"></div>
 		</div>
 	</div>
 </div>
